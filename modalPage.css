@@ -1,0 +1,142 @@
+.payment{
+    width: 100%;
+    min-height: 600px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.bill{
+    background-color: #3C3C3C;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 20px;
+    border-radius: 5px;
+    animation:1s dropModal;
+}
+@keyframes  dropModal{
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+.bill input{
+    width: 100%;
+    padding: 8px 20px;
+    font-size: 17px;
+    outline: none;
+    background-color: #3C3C3C;
+    border: none;
+    border-bottom: solid 1px white;
+    color: #C2C2C2;
+    font-weight: lighter;
+}
+form{
+    color: white;
+    padding-top: 10px;
+}
+.nextsub{
+    width: 100%;
+    padding: 10px;
+    border-radius: 100px;
+    border: 1px solid  #C2C2C2;
+    outline: none;
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    color:  #C2C2C2;
+    cursor: pointer;
+    background-color: #3C3C3C;
+}
+.nextsub:hover{
+    background-color: #C2C2C2;
+    color: #3C3C3C;
+}
+.exitModal{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: lighter;
+    color: white;
+    float: right;
+    top: 10px;
+    right: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+.exitModal:hover{
+    color: red;
+}
+
+/*/*SECOND MODAL FOR SUMISSION PART*/
+.paymentB{
+    width: 100%;
+    min-height: 600px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.summaryOfBills{
+    background-color: #3C3C3C;
+    width: 50%;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 20px;
+    border-radius: 5px;
+    animation:1s dropModal;
+}
+.summaryOfBills h3{
+    font-weight: lighter;
+    padding: 3px 0;
+    
+}
+.summaryOfBills h4{
+    padding-top: 4px;
+    text-align: center;
+}
+.summaryOfBills h2{
+    text-align: center;
+    font-size: 19px;
+}
+.exitM{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: lighter;
+    color: white;
+    float: right;
+    top: 10px;
+    right: 30px;
+    position: absolute;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.exitM:hover{
+    color: red;
+}
+.payM{
+    width: 100%;
+    padding: 9px;
+    margin: 24px 0 0 0 ;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    color:  #C2C2C2;
+    cursor: pointer;
+    background-color: #3C3C3C;
+    border-radius: 100px;
+    border: 1px solid  #C2C2C2;
+}
+.payM:hover{
+    background-color: #C2C2C2;
+    color: #3C3C3C;
+}

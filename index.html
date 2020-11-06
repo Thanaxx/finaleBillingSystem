@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./homepage.css">
+    <link rel="stylesheet" type="text/css" href="./modalPage.css">
+    <link rel="stylesheet" type="text/css" href="./secondPage.css">
+    <link rel="stylesheet" type="text/css" href="./thirdPage.css">
+    <link rel="stylesheet" href="./cssFontawesome/all.min.css">
+    <title>Document</title>
+</head>
+<body>  
+        <nav class="navigationBar">
+            <div class="textLogo"><h1>e<strong style="color: #3C3C3C;">B</strong>illing</h1></div>
+            <div class="navLinks">
+                <a href="#">Account</a>
+                <a href="#">Services</a>
+                <a href="#">Records</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="menu-icon">
+                <a href="#"><i class="fa fa-2x fa-bars" aria-hidden="true" onclick="openmenu()"></i></a>
+            </div>  
+            
+            <div class="menu-links">
+                <div class="exit">
+                    <a href="#" onclick="closeMenu()">&times;</a>
+                </div>
+                <ul class="menuUl">
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Records</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Billing</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="page-bg">
+            <h1>Pay & Secure bills</h1>
+            <p>a one snap billing process</p>
+
+            <div class="payButton">
+                <button class="pay" onclick="openBills()">Pay</button>
+                <button class="more">Learn More</button>
+            </div>
+
+            <!--BILLING METHOD PART/ MODAL-->
+            <div class="payment">
+                <div class="bill">
+                        <form method="POST" class="billing">
+                            <a href="#" class="exitModal" onclick="exit()">&times;</a>
+                                Account number<input type="number" placeholder="Enter account number(9 digits)" id="num">
+                                Account name<input type="text" placeholder="Enter Account name" id="nim">
+                                Due date<input type="date" placeholder="Enter due date" id="dayte">
+                                Amount<input type="number" placeholder="Enter amount" id="amt">
+                                Email address<input type="email" placeholder="Enter email address" id="acctEm">
+                            <button class="nextsub" onclick="calculat()">NEXT</button>
+                        </form>
+                </div>
+            </div>
+
+            <!--SECOND MODAL FOR CONFIRMATION-->
+
+            <div class="paymentB">
+                <div class="summaryOfBills">
+                    <a href="#" class="exitM" onclick="exitMo()">&times;</a>
+                        <h2>You are about to pay</h2>
+                        <h2 style="font-weight: bold; font-size: 25px;" id="moneyy">43.000</h2>
+                        <h2>using eBill</h2>
+                    <hr>
+                        <h3>Account number: <span style="font-weight: bold; float: right; padding-right: 30px;" id="acctNo"></span></h3>
+                        <h3>Account name: <span style="font-weight: bold; float: right; padding-right: 30px;" id="acctName"></span></h3>
+                        <h3>Due date: <span style="font-weight: bold; float: right; padding-right: 30px;" id="dispDate"></span></h3>
+                        <h3>Email address: <span style="font-weight: bold; float: right; padding-right: 30px;" id="acctEmail"></span></h3>
+                    <hr>
+                    <h4>please note that several billers charge a service fee</h4>
+                    <button class="payM" onclick="confirmBill()">Confirm</button>
+                </div>
+            </div>
+
+        </div>
+    
+
+    <!--SECOND PAGE/SCROLL HAHAHAHHA-->
+    <div class="second-section">
+        <div class="image-left">
+            
+        </div>
+        <div class="caption-right">
+            <h1>SERVICES</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam explicabo necessitatibus harum, reprehenderit
+                st iste cumque praesentium quos. Reprehenderit consequatur
+                blanditiis perspiciatis. Eius ut illum laborum. Tenetur 
+                sequi sed numquam?
+            </p>
+        </div>
+    </div>
+
+    <!--THIRD PAGE-->
+    <div class="third-section">
+        <div class="desc-left">
+            <h1>Contact Us</h1>
+        </div>
+
+        <div class="contact-right">
+            <form action="" class="formC">
+                <label for="nameC" class="lbl">Name</label>
+                <input type="text" name="nameC">
+                <label for="emailc" class="lbl">Email</label>
+                <input type="email" name="emailC">
+                <label for="messageC" class="lbl">Message</label>
+                <textarea name="" id="textareaField" cols="30" rows="10"></textarea>
+                <button class="contSub">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+    <script src="./pahesttyle.js"></script>
+    <script src="./billingDatabase.js"></script>
+
+</body>
+
+</html>
