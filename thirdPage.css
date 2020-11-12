@@ -1,94 +1,53 @@
 /*SECTION */
 .third-section{
-    height: 100vh;
-    background-color: #C2C2C2;
+    min-height: 50vh;
+    background-color: #ffffff;
     display: flex;
+    padding: 50px 75px 0px 75px;
 }
-.desc-left{
+.about-left{
     flex: 1;
-    background: linear-gradient(to left, #3C3C3C, #C2C2C2);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 35px;
-    text-align: center;
-    padding: 250px 50px;
-}
-.contact-right{
-    flex: 1.5;
-    background-color: #3C3C3C;
-    border-radius: 300px 0 0 300px;
-}
-.formC{
-    width: 70%;
-    margin: auto;
-    margin-top: 100px;
-    color: #C2C2C2;
-    padding: 30px;
-}
-input[type=text], input[type=email]{
-    width: 100%;
-    padding: 7px 10px;
-    border: #C2C2C2 1px solid;
-    outline: none;
-    background-color: #3C3C3C;
-    font-size: 15px;
-    color: #C2C2C2;
-    margin: 10px 0;
 }
 
-#textareaField{
-    width: 100%;
-    background-color: #3C3C3C;
-    border: #C2C2C2 1px solid;
-    outline: none;
-    font-size: 15px;
-    color: #C2C2C2;
-    margin: 10px 0;
-    padding: 7px 10px;
+.about-right{
+    flex: 1;
+    margin: auto;
 }
-.contSub{
+.about-right img{
+    float: right;
     width: 100%;
-    padding: 10px;
+}
+#boutitle{
+    font-size: 60px;
+    background:linear-gradient(to left, #737e81, #1F3333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#boutdesc{
+    color: #115B57;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: justify;
+}
+.learnBtn{
+    padding: 10px 30px;
+    margin: 20px 0;
+    background-color: #495C5A;
+    color: #AFAFAF;
     border: none;
     outline: none;
-    background-color: #C2C2C2;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 20px;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 @media (max-width: 700px){
     .third-section{
         flex-direction: column;
+        padding: 50px 20px 0 20px;
     }
-    .desc-left{
-        padding: 20px 50px 1px 50px;
-        background-color: rgb(3, 15, 15);
-        font-size: 25px;
+    #boutdesc{
+        font-size: 18px;
     }
-    .formC{
-        width: 70%;
-        margin: auto;
-        margin-top: 1px;
-        color: #3C3C3C;
-    }
-    .contact-right{
-        flex: 1.5;
-        background-color: #C2C2C2;
-        border-radius: 300px 0 0 300px;
-    }
-    #textareaField{
-        width: 100%;
-        background-color: #C2C2C2;
-        border:  #3C3C3C 1px solid;
-    }
-    input[type=text], input[type=email]{
-        background-color: #C2C2C2;
-        border:  #3C3C3C 1px solid;
-        color: #3C3C3C;
-    }
-    .contSub{
-        background-color: #3C3C3C;
-        color: #C2C2C2;
-    }
+
 }

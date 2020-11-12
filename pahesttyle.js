@@ -47,6 +47,7 @@ function calculat(){
     document.getElementById("dispDate").innerText = acctDate;
     document.getElementById("acctEmail").innerText = acctEmail;
 
+    
 }
 function exitMo(){
     paymentB.style.display = "none";

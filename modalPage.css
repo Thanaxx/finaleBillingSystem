@@ -7,7 +7,7 @@
     display: none;
 }
 .bill{
-    background-color: #3C3C3C;
+    background-color: #495C5A;
     width: 50%;
     margin: auto;
     position: absolute;
@@ -31,7 +31,18 @@
     padding: 8px 20px;
     font-size: 17px;
     outline: none;
-    background-color: #3C3C3C;
+    background-color: #495C5A;
+    border: none;
+    border-bottom: solid 1px white;
+    color: #C2C2C2;
+    font-weight: lighter;
+}
+#nim, #acctEm{
+    width: 100%;
+    padding: 8px 20px;
+    font-size: 17px;
+    outline: none;
+    background-color: #495C5A;
     border: none;
     border-bottom: solid 1px white;
     color: #C2C2C2;
@@ -42,21 +53,24 @@ form{
     padding-top: 10px;
 }
 .nextsub{
-    width: 100%;
-    padding: 10px;
-    border-radius: 100px;
-    border: 1px solid  #C2C2C2;
+    width: 30%;
+    padding: 6px;
+    border-radius: 50px;
+    border: 1px solid #C2C2C2;
     outline: none;
     margin: 20px 0 0 0;
     font-size: 20px;
     font-weight: bold;
-    color:  #C2C2C2;
+    color: #495C5A;
     cursor: pointer;
-    background-color: #3C3C3C;
+    background-color: #AFAFAF;
+}
+.btnpay{
+    text-align: center;
 }
 .nextsub:hover{
-    background-color: #C2C2C2;
-    color: #3C3C3C;
+    background-color: #495C5A;
+    color: #AFAFAF;
 }
 .exitModal{
     text-decoration: none;
@@ -73,6 +87,7 @@ form{
     color: red;
 }
 
+
 /*/*SECOND MODAL FOR SUMISSION PART*/
 .paymentB{
     width: 100%;
@@ -83,7 +98,7 @@ form{
     display: none;
 }
 .summaryOfBills{
-    background-color: #3C3C3C;
+    background-color: #495C5A;
     width: 50%;
     height: 350px;
     position: absolute;
@@ -123,20 +138,33 @@ form{
     color: red;
 }
 .payM{
-    width: 100%;
-    padding: 9px;
+    padding: 6px;
+    border-radius: 50px;
     margin: 24px 0 0 0 ;
     border: none;
     outline: none;
     font-size: 20px;
     font-weight: bold;
-    color:  #C2C2C2;
+    color: #495C5A;
+    background-color: #AFAFAF;
     cursor: pointer;
-    background-color: #3C3C3C;
     border-radius: 100px;
     border: 1px solid  #C2C2C2;
+    width: 30%;
 }
 .payM:hover{
-    background-color: #C2C2C2;
-    color: #3C3C3C;
+    background-color: #495C5A;
+    color: #AFAFAF;
+}
+.btn{
+    text-align: center;
+}
+
+@media (max-width: 700px){
+    .bill{
+        width: 90%;
+    }
+    .summaryOfBills{
+        width: 90%;
+    }
 }

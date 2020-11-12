@@ -7,45 +7,56 @@
     <link rel="stylesheet" type="text/css" href="./modalPage.css">
     <link rel="stylesheet" type="text/css" href="./secondPage.css">
     <link rel="stylesheet" type="text/css" href="./thirdPage.css">
+    <link rel="stylesheet" type="text/css" href="./contAct.css">
     <link rel="stylesheet" href="./cssFontawesome/all.min.css">
     <title>Document</title>
 </head>
 <body>  
         <nav class="navigationBar">
-            <div class="textLogo"><h1>e<strong style="color: #3C3C3C;">B</strong>illing</h1></div>
+            <div class="textLogo"><img src="./pageImages/Unlogo.png" alt=""></div>
             <div class="navLinks">
                 <a href="#">Account</a>
-                <a href="#">Services</a>
-                <a href="#">Records</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#Services">Services</a>
+                <a href="records.html">Records</a>
+                <a href="#Abouts">About</a>
+                <a href="#Contacts">Contact</a>
             </div>
 
+            <!--RESPONSIVE/ MOBILE PART-->
             <div class="menu-icon">
-                <a href="#"><i class="fa fa-2x fa-bars" aria-hidden="true" onclick="openmenu()"></i></a>
+                <a href="#"><i class="fa fa-2x fa-bars" onclick="openmenu()"></i></a>
             </div>  
             
             <div class="menu-links">
                 <div class="exit">
-                    <a href="#" onclick="closeMenu()">&times;</a>
+                    <h1 onclick="closeMenu()" class="exit">&times;</h1>
                 </div>
                 <ul class="menuUl">
                     <li><a href="#">Account</a></li>
-                    <li><a href="#">Records</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contacts</a></li>
-                    <li><a href="#">Billing</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="records.html">Records</a></li>
+                    <li><a href="#Abouts">About</a></li>
+                    <li><a href="#Contacts">Contacts</a></li>
                 </ul>
             </div>
         </nav>
 
-        <div class="page-bg">
-            <h1>Pay & Secure bills</h1>
-            <p>a one snap billing process</p>
+            <!--SECTION A PART1-->
+        <div class="PageA">
+            <div class="left-home">
+                <div class="title-page">
+                    <h1 id="logoTitle">eBill</h1>
+                    <p id="logoDesc">lets pay and secure your bills <br> in a one snap billing
+                    process</p> <br>
+    
+                    <button class="pay" onclick="openBills()">Pay</button> <br>
+                    <button class="more">Log in</button>
+                </div>
+            </div>
+            
 
-            <div class="payButton">
-                <button class="pay" onclick="openBills()">Pay</button>
-                <button class="more">Learn More</button>
+            <div class="right-logo">
+                <img src="./pageImages/figmaA.png" alt="logo transaction">
             </div>
 
             <!--BILLING METHOD PART/ MODAL-->
@@ -58,7 +69,9 @@
                                 Due date<input type="date" placeholder="Enter due date" id="dayte">
                                 Amount<input type="number" placeholder="Enter amount" id="amt">
                                 Email address<input type="email" placeholder="Enter email address" id="acctEm">
-                            <button class="nextsub" onclick="calculat()">NEXT</button>
+                                <div class="btnpay">
+                                    <button class="nextsub" onclick="calculat()">NEXT</button>
+                                </div>
                         </form>
                 </div>
             </div>
@@ -78,36 +91,81 @@
                         <h3>Email address: <span style="font-weight: bold; float: right; padding-right: 30px;" id="acctEmail"></span></h3>
                     <hr>
                     <h4>please note that several billers charge a service fee</h4>
-                    <button class="payM" onclick="confirmBill()">Confirm</button>
+                    <div class="btn">
+                        <button class="payM" onclick="confirmBill()">Confirm</button>
+                    </div>
                 </div>
             </div>
 
         </div>
     
 
-    <!--SECOND PAGE/SCROLL HAHAHAHHA-->
-    <div class="second-section">
-        <div class="image-left">
-            
+    <!--SECTION B PART2-->
+    <div class="second-section" id="Services">
+        <h1 id="serv">Services</h1>
+        
+        <div class="top-services">
+            <div class="S1">
+                <img src="./pageImages/S1.png" alt="">
+                <p>Secure personal records</p>
+            </div>
+            <div class="S2">
+                <img src="./pageImages/S3.png" alt="">
+                <p>Easy access to your bills</p>
+            </div>
         </div>
-        <div class="caption-right">
-            <h1>SERVICES</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam explicabo necessitatibus harum, reprehenderit
-                st iste cumque praesentium quos. Reprehenderit consequatur
-                blanditiis perspiciatis. Eius ut illum laborum. Tenetur 
-                sequi sed numquam?
-            </p>
+
+        <div class="bttm-services">
+            <div class="S3">
+                <img src="./pageImages/S2.png" alt="">
+                <p>Email generated</p>
+            </div>
+            <div class="S4">
+                <img src="./pageImages/S4.png" alt="">
+                <p>User friendly website</p>
+            </div>
         </div>
     </div>
 
     <!--THIRD PAGE-->
-    <div class="third-section">
-        <div class="desc-left">
-            <h1>Contact Us</h1>
+    <div class="third-section" id="Abouts">
+        <div class="about-left">
+                <h1 id="boutitle">About Us</h1>
+                <p id="boutdesc">This is an online platform that will
+                    make your billing payment more
+                    easier and collaborates with all your
+                    financial transactions for an easy
+                    access. Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Consequatur 
+                    qui in aut molestiae, minus aliquam quisquam 
+                    repellat asperiores? Ex dolore <br><br> nulla vero tempore illum
+                    tempora deserunt tenetur porro consequatur accusamus.
+                    make your billing payment more
+                    easier and collaborates with all your
+                    financial transactions for an easy
+                    access. Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Consequatur 
+                    qui in aut molestiae, minus aliquam quisquam 
+                    repellat asperiores? Ex dolore nulla vero tempore illum
+                    tempora deserunt tenetur porro consequatur accusamus.
+                </p>
+                <a href="https://smallbusinessfirst.kochiesbusinessbuilders.com.au/advantages-and-disadvantages-of-online-payments/"><button class="learnBtn">Learn more</button></a>
         </div>
 
-        <div class="contact-right">
+        <div class="about-right">
+            <img src="./pageImages/bout.png" alt="">
+        </div>
+    </div>
+
+    <!--SECTION D PART4-->
+    <div class="contacts" id="Contacts">
+
+        <div class="contact-design">
+            <img src="./pageImages/contactssss.png" alt="">
+        </div>
+        
+        <div class="contactInfo">
+            <p class="contactTitle">Get in touch with us!</p>
             <form action="" class="formC">
                 <label for="nameC" class="lbl">Name</label>
                 <input type="text" name="nameC">
@@ -116,9 +174,20 @@
                 <label for="messageC" class="lbl">Message</label>
                 <textarea name="" id="textareaField" cols="30" rows="10"></textarea>
                 <button class="contSub">Submit</button>
-            </form>
+            </form> <br>
+            
+            <div class="icons">
+                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+            </div>
+
         </div>
+
     </div>
+
+
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>

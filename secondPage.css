@@ -1,44 +1,98 @@
 /*SECTION 2*/
 .second-section{
-    height: 100vh;
-    background-color: #3C3C3C;
-    display: flex;
+    min-height: 90vh;
+    background-color: #ffffff;
     padding: 20px;
 }
-.image-left{
-    flex: 1;
-    background-image: url("./pageImages/social-media-5187243_640.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 500px;
-}
-.caption-right{
-    flex: 1;
-    padding: 180px 20px;
-}
-.caption-right p{
-    text-align: justify;
-    font-weight: lighter;
-    font-size: 22px;
-}
-.caption-right h1{
-    font-size: 50px;
-    text-align: center;
-    font-family: arial;
-    background: linear-gradient(to left, #3C3C3C, #C2C2C2);
-    -webkit-text-fill-color: transparent;
+.second-section h1{
+    font-size: 60px;
+    background:linear-gradient(to left, #737e81, #1F3333);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
+
+.top-services, .bttm-services{
+    display: flex;
+}
+.top-services > div{
+    padding: 10px 60px; 
+
+}
+
+.bttm-services > div{
+    padding: 10px 60px; 
+
+}
+.S1{
+    flex: 1;
+
+}
+.S1 img{
+    width: 100%;
+}
+.S2{
+    flex: 1;
+}
+.S2 img{
+    width: 100%;
+}
+.S3{
+    flex: 1;
+}
+.S3 img{
+    width: 100%;
+}
+.S4{
+    flex: 1;
+
+}
+.S4 img{
+    width: 100%;
+}
+.top-services p{
+    text-align: center;
+    color: #115B57;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.bttm-services p{
+    text-align: center;
+    color: #115B57;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
 
 @media (max-width: 700px){
     .second-section{
         flex-direction: column;
+        
     }
-    .caption-right{
-        flex: 1;
-        padding: 20px 20px;
+    .top-services, .bttm-services{
+        flex-direction: column;
+        padding: 5px; 
+        margin: 0;
     }
-    .caption-right h1{
-        font-size: 40px;
+    .second-section{
+        padding: 10px;
     }
+    .top-services > div{
+        padding: 0px; 
+        margin: 0px;
+    }
+    .bttm-services > div{
+        padding: 0px; 
+        margin: 0px;
+    }
+    .top-services p{
+        padding: 10px 0;
+    }
+    .bttm-services p{
+        padding: 10px 0;
+    }
+    #serv{
+        margin-top: 50px;
+    }
+
 }
